@@ -57,7 +57,7 @@ Cerveja
 Vinagrete
 </Text>
 <Entypo name="yelp" size={32} color="black" />
-<Text style={styles.kg}>540 Kg</Text>
+<Text style={styles.kg}>540 g</Text>
 </View>
 </View>
 
@@ -67,7 +67,7 @@ Vinagrete
 Saladas
 </Text>
 <Entypo name="basecamp" size={32} color="black" />
-<Text style={styles.kg}>280 Kg</Text>
+<Text style={styles.kg}>280 g</Text>
 </View>
 </View>
 </View>

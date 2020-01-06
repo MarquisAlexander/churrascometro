@@ -10,6 +10,8 @@ import { View,
          container
         } from 'react-native';
 
+        import { Ionicons, FontAwesome } from '@expo/vector-icons';
+
 import logo from '../../assets/churrasco.png';
 
 export default function Dashboard({navigation}) {
@@ -23,6 +25,7 @@ export default function Dashboard({navigation}) {
 <>
     <View>
       <Image 
+          //marginTop={25}
           borderRadius={20}
           style={{ width: 360, height: 300 }}
           source={logo}
@@ -31,7 +34,7 @@ export default function Dashboard({navigation}) {
     </View>
 
     <Text style={styles.pergunta}>
-      Quantas pessoa participarão do churrasco?
+          Quantidade de pessoa para o churrasco 
     </Text>
 
     <View style={styles.row}>
@@ -46,6 +49,9 @@ export default function Dashboard({navigation}) {
       maxLength = {3}
       fontSize={30}
       />
+      <View style={styles.figu}>
+      <Ionicons name="md-man" size={100} color="black" />
+      </View>
     </View>
 
     <View style={styles.container}>
@@ -59,6 +65,9 @@ export default function Dashboard({navigation}) {
       maxLength = {3}
       fontSize={30}
     />
+      <View style={styles.figu}>
+      <Ionicons name="md-woman" size={100} color="black" />
+      </View>
     </View>
 
     <View style={styles.container}>
@@ -73,10 +82,13 @@ export default function Dashboard({navigation}) {
       //numberOfLines = {2}
       fontSize={30}
     />
+      <View style={styles.figuchild}>
+      <FontAwesome name="child" size={60} color="black" />
+      </View>
     </View>
     </View>
 
-    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Profile', ({value3: {value3}})) }>
+    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Resumo', ({value3: {value3}})) }>
           <Text style={styles.textbutton}>Calcular</Text>
     </TouchableOpacity>
 
@@ -100,6 +112,16 @@ Dashboard.navigationOptions = {
 const styles = StyleSheet.create({
   Centro: {
     flex: 1,
+  },
+
+  figu: {
+    alignItems: 'center',
+    marginTop: '10%',
+  },
+
+  figuchild: {
+    alignItems: 'center',
+    marginTop: '40%',
   },
 
   pergunta: {

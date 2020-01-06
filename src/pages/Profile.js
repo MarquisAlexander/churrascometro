@@ -12,14 +12,12 @@ export default function Profile({navigation}) {
 
   }
 
-  
-
   return (
     <View  marginTop={90}>
       <Text>
         alexander
       </Text>
-  <Text>nome: {JSON.stringify(Nome)}</Text>
+  <Text>valor recebido: {JSON.stringify(Nome)}</Text>
 
 
   <Button title={'press'} onPress={calcular}/>
