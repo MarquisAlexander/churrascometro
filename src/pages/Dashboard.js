@@ -88,7 +88,7 @@ export default function Dashboard({navigation}) {
     </View>
     </View>
 
-    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Resumo', ({value3: {value3}})) }>
+    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Profile', ({value3: {value3}})) }>
           <Text style={styles.textbutton}>Calcular</Text>
     </TouchableOpacity>
 

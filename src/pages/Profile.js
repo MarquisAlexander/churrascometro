@@ -5,7 +5,8 @@ export default function Profile({navigation}) {
   const [value, setValue] = React.useState('');
   const [value1, setValue1] = React.useState('');
 
-  const Nome =  navigation.getParam('value3', 'sem valor');
+  const Totalcerveja =  navigation.getParam('total', 'sem valor');
+  const Totalrefrigerante =  navigation.getParam('totall', 'sem valor');
   const [resultado] = React.useState('1');
 
   function  calcular({value, value1, resultado}){
@@ -17,10 +18,8 @@ export default function Profile({navigation}) {
       <Text>
         alexander
       </Text>
-  <Text>valor recebido: {JSON.stringify(Nome)}</Text>
-
-
-  <Button title={'press'} onPress={calcular}/>
+  <Text>cervejas: {JSON.stringify(Totalcerveja)}</Text>
+  <Text>refrigerante: {JSON.stringify(Totalrefrigerante)}</Text>
     </View>
     
   );

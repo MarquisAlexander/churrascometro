@@ -8,7 +8,7 @@ import  TEST from './pages/styled';
 import Resumo from './pages/Resumo';
 
 const Routes = createAppContainer(
-  createStackNavigator({
+  createBottomTabNavigator({
     Dashboard,
     Profile,
     TEST,
